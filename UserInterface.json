@@ -34,6 +34,7 @@
             "thresholdLabels": true,
             "thresholdMarkers": true
           },
+          "height": "150",
           "id": 2,
           "interval": "10s",
           "isNew": true,
@@ -94,8 +95,7 @@
               "value": "null"
             }
           ],
-          "valueName": "avg",
-          "height": "150"
+          "valueName": "avg"
         },
         {
           "cacheTimeout": null,
@@ -544,7 +544,7 @@
             "rightSide": false,
             "show": true,
             "sort": "avg",
-            "sortDesc": true,
+            "sortDesc": false,
             "total": false,
             "values": true
           },
@@ -781,7 +781,7 @@
             "rightSide": false,
             "show": true,
             "sort": "avg",
-            "sortDesc": true,
+            "sortDesc": false,
             "total": false,
             "values": true
           },
@@ -1019,7 +1019,7 @@
             "rightSide": false,
             "show": true,
             "sort": "avg",
-            "sortDesc": true,
+            "sortDesc": false,
             "total": false,
             "values": true
           },
@@ -1256,7 +1256,7 @@
             "rightSide": false,
             "show": true,
             "sort": "avg",
-            "sortDesc": true,
+            "sortDesc": false,
             "total": false,
             "values": true
           },
@@ -1465,6 +1465,11 @@
             "selected": false
           },
           {
+            "text": "HP 7 G2",
+            "value": "HP 7 G2",
+            "selected": false
+          },
+          {
             "text": "HP Slate 10 HD",
             "value": "HP Slate 10 HD",
             "selected": false
@@ -1487,11 +1492,6 @@
           {
             "text": "LG-D851",
             "value": "LG-D851",
-            "selected": false
-          },
-          {
-            "text": "LG-E431g",
-            "value": "LG-E431g",
             "selected": false
           },
           {
@@ -1580,11 +1580,6 @@
             "selected": false
           },
           {
-            "text": "SM-G935F",
-            "value": "SM-G935F",
-            "selected": false
-          },
-          {
             "text": "SM-J105B",
             "value": "SM-J105B",
             "selected": false
@@ -1592,6 +1587,11 @@
           {
             "text": "SM-T230",
             "value": "SM-T230",
+            "selected": false
+          },
+          {
+            "text": "SM-T530",
+            "value": "SM-T530",
             "selected": false
           },
           {
@@ -1607,11 +1607,6 @@
           {
             "text": "X5S",
             "value": "X5S",
-            "selected": false
-          },
-          {
-            "text": "Y635-L01",
-            "value": "Y635-L01",
             "selected": false
           },
           {
@@ -1666,6 +1661,11 @@
           {
             "text": "2.1.0",
             "value": "2.1.0",
+            "selected": false
+          },
+          {
+            "text": "2.1.1",
+            "value": "2.1.1",
             "selected": false
           }
         ],
@@ -1763,11 +1763,6 @@
             "selected": true
           },
           {
-            "text": "authenticationactivity",
-            "value": "authenticationactivity",
-            "selected": false
-          },
-          {
             "text": "mainactivity",
             "value": "mainactivity",
             "selected": false
@@ -1785,6 +1780,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 21,
+  "version": 22,
   "links": []
 }
