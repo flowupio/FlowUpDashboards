@@ -1,5 +1,5 @@
 {
-  "id": 6,
+  "id": 19,
   "title": "Activitites Lifecycle",
   "originalTitle": "Activitites Lifecycle",
   "tags": [],
@@ -1669,233 +1669,8 @@
             "selected": true
           },
           {
-            "text": "4034G",
-            "value": "4034G",
-            "selected": false
-          },
-          {
-            "text": "8056",
-            "value": "8056",
-            "selected": false
-          },
-          {
-            "text": "8080",
-            "value": "8080",
-            "selected": false
-          },
-          {
-            "text": "Aquaris E4-5",
-            "value": "Aquaris E4-5",
-            "selected": false
-          },
-          {
-            "text": "Aquaris M5",
-            "value": "Aquaris M5",
-            "selected": false
-          },
-          {
-            "text": "Aquaris X5",
-            "value": "Aquaris X5",
-            "selected": false
-          },
-          {
-            "text": "Edison 3",
-            "value": "Edison 3",
-            "selected": false
-          },
-          {
-            "text": "F702",
-            "value": "F702",
-            "selected": false
-          },
-          {
-            "text": "GT-I8190L",
-            "value": "GT-I8190L",
-            "selected": false
-          },
-          {
-            "text": "GT-I8260L",
-            "value": "GT-I8260L",
-            "selected": false
-          },
-          {
-            "text": "GT-I9150",
-            "value": "GT-I9150",
-            "selected": false
-          },
-          {
-            "text": "GT-P3110",
-            "value": "GT-P3110",
-            "selected": false
-          },
-          {
-            "text": "GT-P5210",
-            "value": "GT-P5210",
-            "selected": false
-          },
-          {
-            "text": "HP Slate 10 HD",
-            "value": "HP Slate 10 HD",
-            "selected": false
-          },
-          {
-            "text": "HTC Desire 626s",
-            "value": "HTC Desire 626s",
-            "selected": false
-          },
-          {
-            "text": "HTC One",
-            "value": "HTC One",
-            "selected": false
-          },
-          {
-            "text": "HUAWEI Y560-L01",
-            "value": "HUAWEI Y560-L01",
-            "selected": false
-          },
-          {
-            "text": "LG-D851",
-            "value": "LG-D851",
-            "selected": false
-          },
-          {
-            "text": "LG-E431g",
-            "value": "LG-E431g",
-            "selected": false
-          },
-          {
-            "text": "LG-V500",
-            "value": "LG-V500",
-            "selected": false
-          },
-          {
-            "text": "Lenovo A7600-F",
-            "value": "Lenovo A7600-F",
-            "selected": false
-          },
-          {
-            "text": "Lenovo B8000-F",
-            "value": "Lenovo B8000-F",
-            "selected": false
-          },
-          {
-            "text": "MotoG3",
-            "value": "MotoG3",
-            "selected": false
-          },
-          {
-            "text": "Nexus 5X",
-            "value": "Nexus 5X",
-            "selected": false
-          },
-          {
-            "text": "Nexus 6P",
-            "value": "Nexus 6P",
-            "selected": false
-          },
-          {
-            "text": "ONIX 10-6 OC",
-            "value": "ONIX 10-6 OC",
-            "selected": false
-          },
-          {
-            "text": "P022",
-            "value": "P022",
-            "selected": false
-          },
-          {
-            "text": "Q-3778",
-            "value": "Q-3778",
-            "selected": false
-          },
-          {
-            "text": "RAINBOW JAM",
-            "value": "RAINBOW JAM",
-            "selected": false
-          },
-          {
-            "text": "RCT6303W87DK",
-            "value": "RCT6303W87DK",
-            "selected": false
-          },
-          {
-            "text": "SGP321",
-            "value": "SGP321",
-            "selected": false
-          },
-          {
-            "text": "SM-G360GY",
-            "value": "SM-G360GY",
-            "selected": false
-          },
-          {
-            "text": "SM-G530FZ",
-            "value": "SM-G530FZ",
-            "selected": false
-          },
-          {
-            "text": "SM-G800H",
-            "value": "SM-G800H",
-            "selected": false
-          },
-          {
-            "text": "SM-G920F",
-            "value": "SM-G920F",
-            "selected": false
-          },
-          {
-            "text": "SM-G925F",
-            "value": "SM-G925F",
-            "selected": false
-          },
-          {
-            "text": "SM-G935F",
-            "value": "SM-G935F",
-            "selected": false
-          },
-          {
-            "text": "SM-J105B",
-            "value": "SM-J105B",
-            "selected": false
-          },
-          {
-            "text": "SM-T230",
-            "value": "SM-T230",
-            "selected": false
-          },
-          {
-            "text": "VF-795",
-            "value": "VF-795",
-            "selected": false
-          },
-          {
-            "text": "Vodafone Smart ultra 6",
-            "value": "Vodafone Smart ultra 6",
-            "selected": false
-          },
-          {
-            "text": "X5S",
-            "value": "X5S",
-            "selected": false
-          },
-          {
-            "text": "Y635-L01",
-            "value": "Y635-L01",
-            "selected": false
-          },
-          {
-            "text": "bq Maxwell 2 Quad Core",
-            "value": "bq Maxwell 2 Quad Core",
-            "selected": false
-          },
-          {
-            "text": "miTab Boston",
-            "value": "miTab Boston",
-            "selected": false
-          },
-          {
-            "text": "xo4",
-            "value": "xo4",
+            "text": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
+            "value": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
             "selected": false
           }
         ],
@@ -1921,18 +1696,8 @@
             "selected": true
           },
           {
-            "text": "2.0.5",
-            "value": "2.0.5",
-            "selected": false
-          },
-          {
-            "text": "2.0.9",
-            "value": "2.0.9",
-            "selected": false
-          },
-          {
-            "text": "2.1.0",
-            "value": "2.1.0",
+            "text": "4.0.3.SNAPSHOT",
+            "value": "4.0.3.SNAPSHOT",
             "selected": false
           }
         ],
@@ -1958,48 +1723,8 @@
             "selected": true
           },
           {
-            "text": "API16",
-            "value": "API16",
-            "selected": false
-          },
-          {
-            "text": "API17",
-            "value": "API17",
-            "selected": false
-          },
-          {
-            "text": "API18",
-            "value": "API18",
-            "selected": false
-          },
-          {
-            "text": "API19",
-            "value": "API19",
-            "selected": false
-          },
-          {
-            "text": "API21",
-            "value": "API21",
-            "selected": false
-          },
-          {
-            "text": "API22",
-            "value": "API22",
-            "selected": false
-          },
-          {
             "text": "API23",
             "value": "API23",
-            "selected": false
-          },
-          {
-            "text": "API24",
-            "value": "API24",
-            "selected": false
-          },
-          {
-            "text": "API25",
-            "value": "API25",
             "selected": false
           }
         ],
@@ -2026,13 +1751,53 @@
             "selected": true
           },
           {
-            "text": "authenticationactivity",
-            "value": "authenticationactivity",
+            "text": "candidatestutorialactivity",
+            "value": "candidatestutorialactivity",
+            "selected": false
+          },
+          {
+            "text": "companiestutorialactivity",
+            "value": "companiestutorialactivity",
+            "selected": false
+          },
+          {
+            "text": "displayleakactivity",
+            "value": "displayleakactivity",
+            "selected": false
+          },
+          {
+            "text": "facebookactivity",
+            "value": "facebookactivity",
+            "selected": false
+          },
+          {
+            "text": "formactivity",
+            "value": "formactivity",
+            "selected": false
+          },
+          {
+            "text": "landingcandidatesactivity",
+            "value": "landingcandidatesactivity",
+            "selected": false
+          },
+          {
+            "text": "landingcompaniesactivity",
+            "value": "landingcompaniesactivity",
             "selected": false
           },
           {
             "text": "mainactivity",
             "value": "mainactivity",
+            "selected": false
+          },
+          {
+            "text": "prelandingactivity",
+            "value": "prelandingactivity",
+            "selected": false
+          },
+          {
+            "text": "settingsactivity",
+            "value": "settingsactivity",
             "selected": false
           }
         ],
@@ -2048,6 +1813,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 16,
+  "version": 0,
   "links": []
 }
