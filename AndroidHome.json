@@ -857,10 +857,10 @@
             "min": false,
             "rightSide": false,
             "show": true,
-            "total": false,
-            "values": true,
+            "sort": "avg",
             "sortDesc": true,
-            "sort": "avg"
+            "total": false,
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -879,15 +879,15 @@
               "alias": "CPU - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -918,15 +918,15 @@
               "alias": "Memory - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1009,10 +1009,10 @@
             "min": false,
             "rightSide": false,
             "show": true,
-            "total": false,
-            "values": true,
+            "sort": "avg",
             "sortDesc": true,
-            "sort": "avg"
+            "total": false,
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -1036,15 +1036,15 @@
               "alias": "FrameTime - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1075,15 +1075,15 @@
               "alias": "FramesPerSecond - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1167,10 +1167,10 @@
             "min": false,
             "rightSide": false,
             "show": true,
-            "total": false,
-            "values": true,
+            "sort": "avg",
             "sortDesc": true,
-            "sort": "avg"
+            "total": false,
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -1189,15 +1189,15 @@
               "alias": "Internal Storage - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1228,15 +1228,15 @@
               "alias": "Shared Preferences - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1319,10 +1319,10 @@
             "min": false,
             "rightSide": false,
             "show": true,
-            "total": false,
-            "values": true,
+            "sort": "avg",
             "sortDesc": false,
-            "sort": "avg"
+            "total": false,
+            "values": true
           },
           "lines": true,
           "linewidth": 2,
@@ -1346,15 +1346,15 @@
               "alias": "Bytes uploaded - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1385,15 +1385,15 @@
               "alias": "Bytes downloaded - {{VersionName}}",
               "bucketAggs": [
                 {
-                  "type": "terms",
+                  "fake": true,
                   "field": "VersionName",
                   "id": "3",
-                  "fake": true,
                   "settings": {
                     "order": "asc",
-                    "size": "10",
-                    "orderBy": "_term"
-                  }
+                    "orderBy": "_term",
+                    "size": "10"
+                  },
+                  "type": "terms"
                 },
                 {
                   "field": "@timestamp",
@@ -1454,8 +1454,8 @@
           ]
         }
       ],
-      "title": "Performance by App Version",
-      "showTitle": true
+      "showTitle": true,
+      "title": "Performance by App Version"
     },
     {
       "collapse": false,
@@ -1463,21 +1463,21 @@
       "height": "250px",
       "panels": [
         {
-          "title": "Dashboards",
-          "error": false,
-          "span": 12,
           "editable": true,
-          "type": "dashlist",
-          "isNew": true,
-          "id": 15,
-          "query": "",
-          "limit": 100,
-          "tags": [],
-          "recent": true,
-          "search": false,
-          "starred": false,
+          "error": false,
           "headings": false,
-          "links": []
+          "id": 15,
+          "isNew": true,
+          "limit": 100,
+          "links": [],
+          "query": "",
+          "recent": false,
+          "search": true,
+          "span": 12,
+          "starred": false,
+          "tags": [],
+          "title": "Dashboards",
+          "type": "dashlist"
         }
       ],
       "title": "Activity Performance"
@@ -1646,6 +1646,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 17,
+  "version": 19,
   "links": []
 }
