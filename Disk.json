@@ -36,7 +36,7 @@
             "thresholdMarkers": true
           },
           "id": 12,
-          "interval": null,
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -49,7 +49,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
+            "full": true,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -82,7 +82,7 @@
               "timeField": "@timestamp"
             }
           ],
-          "thresholds": "104857600,209715200,314572800",
+          "thresholds": "104857600,209715200",
           "title": "Internal Storage Written Bytes",
           "type": "singlestat",
           "valueFontSize": "80%",
@@ -117,7 +117,7 @@
             "thresholdMarkers": true
           },
           "id": 14,
-          "interval": null,
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -130,7 +130,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
+            "full": true,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -163,7 +163,7 @@
               "timeField": "@timestamp"
             }
           ],
-          "thresholds": "10485760,20971520,31457280",
+          "thresholds": "10485760,20971520",
           "title": "Shared Preferences Written Bytes",
           "type": "singlestat",
           "valueFontSize": "80%",
@@ -202,6 +202,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 4,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "avg": false,
@@ -298,6 +299,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 5,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "avg": false,
@@ -403,6 +405,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 10,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -514,6 +517,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 11,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -633,6 +637,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 6,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -744,6 +749,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 7,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -863,6 +869,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 8,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -974,6 +981,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 9,
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1126,8 +1134,28 @@
             "selected": true
           },
           {
+            "text": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
+            "value": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
+            "selected": false
+          },
+          {
             "text": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
             "value": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
+            "selected": false
+          },
+          {
+            "text": "Nexus 5",
+            "value": "Nexus 5",
+            "selected": false
+          },
+          {
+            "text": "Nexus 6P",
+            "value": "Nexus 6P",
+            "selected": false
+          },
+          {
+            "text": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
+            "value": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
             "selected": false
           }
         ],
@@ -1157,6 +1185,11 @@
             "text": "4.0.3.SNAPSHOT",
             "value": "4.0.3.SNAPSHOT",
             "selected": false
+          },
+          {
+            "text": "4.1.0.SNAPSHOT",
+            "value": "4.1.0.SNAPSHOT",
+            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"VersionName\"}\t",
@@ -1182,8 +1215,23 @@
             "selected": true
           },
           {
+            "text": "API16",
+            "value": "API16",
+            "selected": false
+          },
+          {
+            "text": "API22",
+            "value": "API22",
+            "selected": false
+          },
+          {
             "text": "API23",
             "value": "API23",
+            "selected": false
+          },
+          {
+            "text": "API25",
+            "value": "API25",
             "selected": false
           }
         ],
@@ -1196,7 +1244,8 @@
   "annotations": {
     "list": []
   },
+  "refresh": "5s",
   "schemaVersion": 12,
-  "version": 0,
+  "version": 6,
   "links": []
 }

@@ -24,6 +24,7 @@
             "rgba(245, 54, 54, 0.9)"
           ],
           "datasource": null,
+          "decimals": null,
           "editable": true,
           "error": false,
           "format": "ns",
@@ -35,8 +36,9 @@
             "thresholdMarkers": true
           },
           "height": "150",
+          "hideTimeOverride": false,
           "id": 2,
-          "interval": "10s",
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -49,7 +51,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
+            "full": true,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -84,7 +86,7 @@
               "timeField": "@timestamp"
             }
           ],
-          "thresholds": "18000000,20000000,200000000",
+          "thresholds": "20000000,25000000",
           "title": "Frame Time",
           "type": "singlestat",
           "valueFontSize": "110%",
@@ -118,7 +120,7 @@
             "thresholdMarkers": true
           },
           "id": 1,
-          "interval": "10s",
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -131,7 +133,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": false,
+            "full": true,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -167,7 +169,7 @@
               "timeField": "@timestamp"
             }
           ],
-          "thresholds": "40,50,60",
+          "thresholds": "50,40",
           "title": "Frames Per Second",
           "transparent": false,
           "type": "singlestat",
@@ -201,13 +203,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 20000000,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 25000000,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 13,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -302,13 +304,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 50,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 40,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 14,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -412,13 +414,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 20000000,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 25000000,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 5,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -526,13 +528,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 50,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 40,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 10,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -649,13 +651,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 20000000,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 25000000,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 7,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -763,13 +765,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 50,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 40,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 11,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -886,13 +888,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 20000000,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 25000000,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 6,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1001,13 +1003,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 50,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 40,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 8,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1124,13 +1126,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 20000000,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 25000000,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 4,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1238,13 +1240,13 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": null,
+            "threshold1": 50,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": null,
+            "threshold2": 40,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 9,
-          "interval": "20s",
+          "interval": "4m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1400,8 +1402,28 @@
             "selected": true
           },
           {
+            "text": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
+            "value": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
+            "selected": false
+          },
+          {
             "text": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
             "value": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
+            "selected": false
+          },
+          {
+            "text": "Nexus 5",
+            "value": "Nexus 5",
+            "selected": false
+          },
+          {
+            "text": "Nexus 6P",
+            "value": "Nexus 6P",
+            "selected": false
+          },
+          {
+            "text": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
+            "value": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
             "selected": false
           }
         ],
@@ -1432,6 +1454,11 @@
             "text": "4.0.3.SNAPSHOT",
             "value": "4.0.3.SNAPSHOT",
             "selected": false
+          },
+          {
+            "text": "4.1.0.SNAPSHOT",
+            "value": "4.1.0.SNAPSHOT",
+            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"VersionName\"}\t",
@@ -1458,8 +1485,23 @@
             "selected": true
           },
           {
+            "text": "API16",
+            "value": "API16",
+            "selected": false
+          },
+          {
+            "text": "API22",
+            "value": "API22",
+            "selected": false
+          },
+          {
             "text": "API23",
             "value": "API23",
+            "selected": false
+          },
+          {
+            "text": "API25",
+            "value": "API25",
             "selected": false
           }
         ],
@@ -1498,18 +1540,13 @@
             "selected": false
           },
           {
-            "text": "displayleakactivity",
-            "value": "displayleakactivity",
-            "selected": false
-          },
-          {
             "text": "facebookactivity",
             "value": "facebookactivity",
             "selected": false
           },
           {
-            "text": "formactivity",
-            "value": "formactivity",
+            "text": "jobpageactivity",
+            "value": "jobpageactivity",
             "selected": false
           },
           {
@@ -1533,6 +1570,11 @@
             "selected": false
           },
           {
+            "text": "requeststoragepermissionactivity",
+            "value": "requeststoragepermissionactivity",
+            "selected": false
+          },
+          {
             "text": "settingsactivity",
             "value": "settingsactivity",
             "selected": false
@@ -1550,6 +1592,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 1,
+  "version": 10,
   "links": []
 }
