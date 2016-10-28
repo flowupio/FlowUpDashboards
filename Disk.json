@@ -1132,36 +1132,12 @@
             "text": "All",
             "value": "$__all",
             "selected": true
-          },
-          {
-            "text": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
-            "value": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
-            "selected": false
-          },
-          {
-            "text": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
-            "value": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
-            "selected": false
-          },
-          {
-            "text": "Nexus 5",
-            "value": "Nexus 5",
-            "selected": false
-          },
-          {
-            "text": "Nexus 6P",
-            "value": "Nexus 6P",
-            "selected": false
-          },
-          {
-            "text": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
-            "value": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
-            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"DeviceModel\"}\t",
         "refresh": 1,
-        "type": "query"
+        "type": "query",
+        "allValue": "*"
       },
       {
         "current": {
@@ -1180,21 +1156,12 @@
             "text": "All",
             "value": "$__all",
             "selected": true
-          },
-          {
-            "text": "4.0.3.SNAPSHOT",
-            "value": "4.0.3.SNAPSHOT",
-            "selected": false
-          },
-          {
-            "text": "4.1.0.SNAPSHOT",
-            "value": "4.1.0.SNAPSHOT",
-            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"VersionName\"}\t",
         "refresh": 1,
-        "type": "query"
+        "type": "query",
+        "allValue": "*"
       },
       {
         "current": {
@@ -1213,31 +1180,12 @@
             "text": "All",
             "value": "$__all",
             "selected": true
-          },
-          {
-            "text": "API16",
-            "value": "API16",
-            "selected": false
-          },
-          {
-            "text": "API22",
-            "value": "API22",
-            "selected": false
-          },
-          {
-            "text": "API23",
-            "value": "API23",
-            "selected": false
-          },
-          {
-            "text": "API25",
-            "value": "API25",
-            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"AndroidOSVersion\"}",
         "refresh": 1,
-        "type": "query"
+        "type": "query",
+        "allValue": "*"
       }
     ]
   },
@@ -1246,6 +1194,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 6,
+  "version": 9,
   "links": []
 }
