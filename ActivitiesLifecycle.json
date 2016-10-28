@@ -1944,7 +1944,7 @@
     }
   ],
   "time": {
-    "from": "now-6h",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -1976,6 +1976,7 @@
     "list": [
       {
         "allFormat": "glob",
+        "allValue": "*",
         "current": {
           "value": [
             "$__all"
@@ -2021,15 +2022,19 @@
         ],
         "query": "{\"find\": \"terms\", \"field\": \"DeviceModel\"}\t",
         "refresh": 1,
+        "regex": "",
         "type": "query"
       },
       {
+        "allFormat": "glob",
+        "allValue": "*",
         "current": {
           "value": [
             "$__all"
           ],
           "text": "$__all"
         },
+        "datasource": null,
         "hide": 0,
         "includeAll": true,
         "multi": true,
@@ -2056,12 +2061,15 @@
         "type": "query"
       },
       {
+        "allFormat": "glob",
+        "allValue": "*",
         "current": {
           "value": [
             "$__all"
           ],
           "text": "$__all"
         },
+        "datasource": null,
         "hide": 0,
         "includeAll": true,
         "multi": true,
@@ -2098,6 +2106,7 @@
         "type": "query"
       },
       {
+        "allFormat": "glob",
         "allValue": "*",
         "current": {
           "value": [
@@ -2105,6 +2114,7 @@
           ],
           "text": "$__all"
         },
+        "datasource": null,
         "hide": 0,
         "includeAll": true,
         "multi": true,
@@ -2151,6 +2161,16 @@
             "selected": false
           },
           {
+            "text": "mapactivity",
+            "value": "mapactivity",
+            "selected": false
+          },
+          {
+            "text": "messagesactivity",
+            "value": "messagesactivity",
+            "selected": false
+          },
+          {
             "text": "prelandingactivity",
             "value": "prelandingactivity",
             "selected": false
@@ -2178,6 +2198,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 9,
+  "version": 10,
   "links": []
 }
