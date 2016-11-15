@@ -36,7 +36,7 @@
           },
           "height": "150px",
           "id": 2,
-          "interval": "10s",
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -119,7 +119,7 @@
           },
           "height": "150px",
           "id": 13,
-          "interval": "10s",
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -215,7 +215,7 @@
           },
           "height": "150px",
           "id": 14,
-          "interval": "10s",
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -298,7 +298,7 @@
           },
           "height": "150px",
           "id": 15,
-          "interval": "10s",
+          "interval": "4m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -1668,171 +1668,6 @@
             "text": "All",
             "value": "$__all",
             "selected": true
-          },
-          {
-            "text": "Aquaris E4-5",
-            "value": "Aquaris E4-5",
-            "selected": false
-          },
-          {
-            "text": "Aquaris X5",
-            "value": "Aquaris X5",
-            "selected": false
-          },
-          {
-            "text": "D2303",
-            "value": "D2303",
-            "selected": false
-          },
-          {
-            "text": "GT-I8260L",
-            "value": "GT-I8260L",
-            "selected": false
-          },
-          {
-            "text": "GT-I9060",
-            "value": "GT-I9060",
-            "selected": false
-          },
-          {
-            "text": "GT-I9060M",
-            "value": "GT-I9060M",
-            "selected": false
-          },
-          {
-            "text": "GT-P5110",
-            "value": "GT-P5110",
-            "selected": false
-          },
-          {
-            "text": "GT-P5210",
-            "value": "GT-P5210",
-            "selected": false
-          },
-          {
-            "text": "HP Slate 10 HD",
-            "value": "HP Slate 10 HD",
-            "selected": false
-          },
-          {
-            "text": "HTC One",
-            "value": "HTC One",
-            "selected": false
-          },
-          {
-            "text": "Lenovo B8000-F",
-            "value": "Lenovo B8000-F",
-            "selected": false
-          },
-          {
-            "text": "NBX-T7A3IP",
-            "value": "NBX-T7A3IP",
-            "selected": false
-          },
-          {
-            "text": "Nexus 5X",
-            "value": "Nexus 5X",
-            "selected": false
-          },
-          {
-            "text": "ONIX 10-6 OC",
-            "value": "ONIX 10-6 OC",
-            "selected": false
-          },
-          {
-            "text": "P00C",
-            "value": "P00C",
-            "selected": false
-          },
-          {
-            "text": "P022",
-            "value": "P022",
-            "selected": false
-          },
-          {
-            "text": "Q-3778",
-            "value": "Q-3778",
-            "selected": false
-          },
-          {
-            "text": "RCT6203W46",
-            "value": "RCT6203W46",
-            "selected": false
-          },
-          {
-            "text": "SGP321",
-            "value": "SGP321",
-            "selected": false
-          },
-          {
-            "text": "SM-G350E",
-            "value": "SM-G350E",
-            "selected": false
-          },
-          {
-            "text": "SM-G530FZ",
-            "value": "SM-G530FZ",
-            "selected": false
-          },
-          {
-            "text": "SM-G900M",
-            "value": "SM-G900M",
-            "selected": false
-          },
-          {
-            "text": "SM-G925F",
-            "value": "SM-G925F",
-            "selected": false
-          },
-          {
-            "text": "SM-T113NU",
-            "value": "SM-T113NU",
-            "selected": false
-          },
-          {
-            "text": "SM-T530",
-            "value": "SM-T530",
-            "selected": false
-          },
-          {
-            "text": "SM-T580",
-            "value": "SM-T580",
-            "selected": false
-          },
-          {
-            "text": "SM-T710",
-            "value": "SM-T710",
-            "selected": false
-          },
-          {
-            "text": "VF-795",
-            "value": "VF-795",
-            "selected": false
-          },
-          {
-            "text": "X5S",
-            "value": "X5S",
-            "selected": false
-          },
-          {
-            "text": "X6pro",
-            "value": "X6pro",
-            "selected": false
-          },
-          {
-            "text": "XT1032",
-            "value": "XT1032",
-            "selected": false
-          },
-          {
-            "text": "orbis",
-            "value": "orbis",
-            "selected": false
-          },
-          {
-            "text": "xo4",
-            "value": "xo4",
-            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"DeviceModel\"}\t",
