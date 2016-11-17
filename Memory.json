@@ -1,5 +1,5 @@
 {
-  "id": 18,
+  "id": 8,
   "title": "Memory",
   "originalTitle": "Memory",
   "tags": [],
@@ -36,7 +36,7 @@
             "thresholdMarkers": true
           },
           "id": 3,
-          "interval": "4m",
+          "interval": null,
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -49,7 +49,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": true,
+            "full": false,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -82,7 +82,7 @@
               "timeField": "@timestamp"
             }
           ],
-          "thresholds": "50,75",
+          "thresholds": "50,75,80",
           "title": "Consumption",
           "type": "singlestat",
           "valueFontSize": "80%",
@@ -98,7 +98,7 @@
         {
           "cacheTimeout": null,
           "colorBackground": false,
-          "colorValue": false,
+          "colorValue": true,
           "colors": [
             "rgba(50, 172, 45, 0.97)",
             "rgba(237, 129, 40, 0.89)",
@@ -117,7 +117,7 @@
             "thresholdMarkers": true
           },
           "id": 12,
-          "interval": "4m",
+          "interval": null,
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -130,7 +130,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": true,
+            "full": false,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -163,7 +163,7 @@
               "timeField": "@timestamp"
             }
           ],
-          "thresholds": "",
+          "thresholds": "100663296,150994994,161480704",
           "title": "Bytes Allocated",
           "type": "singlestat",
           "valueFontSize": "80%",
@@ -177,7 +177,7 @@
           "valueName": "avg"
         },
         {
-          "content": "# Memory Usage\n\nThe process associated with your app is executed using a 192 MB heap by default. Your application should not allocate more than 192 MB or an OutOfMemoryException will be thrown. Some applications are configured with an AndroidManifest flag named \"largeHeap=true\". If this flag is enabled the size of the heap will be configured with 512 MB instead of 192 MB.",
+          "content": "# Memory Usage\n\nThe process associated with your app is executed using a 192 MB heap by default in most of the Android OS distributions. Your application should not allocate more than 192 MB or an OutOfMemoryException will be thrown. Some applications are configured with an AndroidManifest flag named \"largeHeap=true\". If this flag is enabled the size of the heap will be configured with 512 MB instead of 192 MB. Even when this values depends on the Android OS distribution configured by the manufacturer most of the devices are using these values.",
           "editable": true,
           "error": false,
           "id": 1,
@@ -196,9 +196,9 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": 50,
+            "threshold1": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": 75,
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 4,
@@ -399,9 +399,9 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": 50,
+            "threshold1": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": 75,
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 10,
@@ -434,13 +434,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Memory Consumption - Version Name {{VersionName}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "VersionName",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -545,13 +546,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Allocated - Version Name {{VersionName}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "VersionName",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -578,7 +580,7 @@
                   "type": "avg"
                 }
               ],
-              "query": "DeviceModel:$Device AND VersionName:$VersionName AND AndroidOSVersion:$AndroidOSVersion",
+              "query": "AppPackage:\"com.nero.elrubiusomg\" AND DeviceModel:$Device AND VersionName:$VersionName AND AndroidOSVersion:$AndroidOSVersion",
               "refId": "A",
               "timeField": "@timestamp"
             }
@@ -631,9 +633,9 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": 50,
+            "threshold1": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": 75,
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 6,
@@ -644,7 +646,7 @@
             "avg": true,
             "current": false,
             "max": true,
-            "min": false,
+            "min": true,
             "rightSide": false,
             "show": true,
             "sort": "avg",
@@ -666,13 +668,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Memory Consumption - {{AndroidOSVersion}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "AndroidOSVersion",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -777,13 +780,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Allocated - {{AndroidOSVersion}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "AndroidOSVersion",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -810,7 +814,7 @@
                   "type": "avg"
                 }
               ],
-              "query": "DeviceModel:$Device AND VersionName:$VersionName AND AndroidOSVersion:$AndroidOSVersion",
+              "query": "AppPackage:\"com.nero.elrubiusomg\" AND DeviceModel:$Device AND VersionName:$VersionName AND AndroidOSVersion:$AndroidOSVersion",
               "refId": "A",
               "timeField": "@timestamp"
             }
@@ -863,9 +867,9 @@
           "error": false,
           "fill": 1,
           "grid": {
-            "threshold1": 50,
+            "threshold1": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2": 75,
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 8,
@@ -898,13 +902,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Memory Consumption - Device Model {{DeviceModel}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "DeviceModel",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -1009,13 +1014,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Allocated - Device Model {{DeviceModel}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "DeviceModel",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -1042,7 +1048,7 @@
                   "type": "avg"
                 }
               ],
-              "query": "DeviceModel:$Device AND VersionName:$VersionName AND AndroidOSVersion:$AndroidOSVersion",
+              "query": "AppPackage:\"com.nero.elrubiusomg\" AND DeviceModel:$Device AND VersionName:$VersionName AND AndroidOSVersion:$AndroidOSVersion",
               "refId": "A",
               "timeField": "@timestamp"
             }
@@ -1132,12 +1138,176 @@
             "text": "All",
             "value": "$__all",
             "selected": true
+          },
+          {
+            "text": "Aquaris E4-5",
+            "value": "Aquaris E4-5",
+            "selected": false
+          },
+          {
+            "text": "Aquaris X5",
+            "value": "Aquaris X5",
+            "selected": false
+          },
+          {
+            "text": "D2303",
+            "value": "D2303",
+            "selected": false
+          },
+          {
+            "text": "GT-I8260L",
+            "value": "GT-I8260L",
+            "selected": false
+          },
+          {
+            "text": "GT-I9060",
+            "value": "GT-I9060",
+            "selected": false
+          },
+          {
+            "text": "GT-I9060M",
+            "value": "GT-I9060M",
+            "selected": false
+          },
+          {
+            "text": "GT-P5110",
+            "value": "GT-P5110",
+            "selected": false
+          },
+          {
+            "text": "GT-P5210",
+            "value": "GT-P5210",
+            "selected": false
+          },
+          {
+            "text": "HP Slate 10 HD",
+            "value": "HP Slate 10 HD",
+            "selected": false
+          },
+          {
+            "text": "HTC One",
+            "value": "HTC One",
+            "selected": false
+          },
+          {
+            "text": "Lenovo B8000-F",
+            "value": "Lenovo B8000-F",
+            "selected": false
+          },
+          {
+            "text": "NBX-T7A3IP",
+            "value": "NBX-T7A3IP",
+            "selected": false
+          },
+          {
+            "text": "Nexus 5X",
+            "value": "Nexus 5X",
+            "selected": false
+          },
+          {
+            "text": "ONIX 10-6 OC",
+            "value": "ONIX 10-6 OC",
+            "selected": false
+          },
+          {
+            "text": "P00C",
+            "value": "P00C",
+            "selected": false
+          },
+          {
+            "text": "P022",
+            "value": "P022",
+            "selected": false
+          },
+          {
+            "text": "Q-3778",
+            "value": "Q-3778",
+            "selected": false
+          },
+          {
+            "text": "RCT6203W46",
+            "value": "RCT6203W46",
+            "selected": false
+          },
+          {
+            "text": "SGP321",
+            "value": "SGP321",
+            "selected": false
+          },
+          {
+            "text": "SM-G350E",
+            "value": "SM-G350E",
+            "selected": false
+          },
+          {
+            "text": "SM-G530FZ",
+            "value": "SM-G530FZ",
+            "selected": false
+          },
+          {
+            "text": "SM-G900M",
+            "value": "SM-G900M",
+            "selected": false
+          },
+          {
+            "text": "SM-G925F",
+            "value": "SM-G925F",
+            "selected": false
+          },
+          {
+            "text": "SM-T113NU",
+            "value": "SM-T113NU",
+            "selected": false
+          },
+          {
+            "text": "SM-T530",
+            "value": "SM-T530",
+            "selected": false
+          },
+          {
+            "text": "SM-T580",
+            "value": "SM-T580",
+            "selected": false
+          },
+          {
+            "text": "SM-T710",
+            "value": "SM-T710",
+            "selected": false
+          },
+          {
+            "text": "VF-795",
+            "value": "VF-795",
+            "selected": false
+          },
+          {
+            "text": "X5S",
+            "value": "X5S",
+            "selected": false
+          },
+          {
+            "text": "X6pro",
+            "value": "X6pro",
+            "selected": false
+          },
+          {
+            "text": "XT1032",
+            "value": "XT1032",
+            "selected": false
+          },
+          {
+            "text": "orbis",
+            "value": "orbis",
+            "selected": false
+          },
+          {
+            "text": "xo4",
+            "value": "xo4",
+            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"DeviceModel\"}\t",
         "refresh": 1,
-        "type": "query",
-        "allValue": "*"
+        "type": "query"
       },
       {
         "current": {
@@ -1156,12 +1326,36 @@
             "text": "All",
             "value": "$__all",
             "selected": true
+          },
+          {
+            "text": "2.1.1",
+            "value": "2.1.1",
+            "selected": false
+          },
+          {
+            "text": "2.1.2",
+            "value": "2.1.2",
+            "selected": false
+          },
+          {
+            "text": "2.1.3",
+            "value": "2.1.3",
+            "selected": false
+          },
+          {
+            "text": "2.1.4",
+            "value": "2.1.4",
+            "selected": false
+          },
+          {
+            "text": "2.1.5",
+            "value": "2.1.5",
+            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"VersionName\"}\t",
         "refresh": 1,
-        "type": "query",
-        "allValue": "*"
+        "type": "query"
       },
       {
         "current": {
@@ -1180,12 +1374,51 @@
             "text": "All",
             "value": "$__all",
             "selected": true
+          },
+          {
+            "text": "API16",
+            "value": "API16",
+            "selected": false
+          },
+          {
+            "text": "API17",
+            "value": "API17",
+            "selected": false
+          },
+          {
+            "text": "API18",
+            "value": "API18",
+            "selected": false
+          },
+          {
+            "text": "API19",
+            "value": "API19",
+            "selected": false
+          },
+          {
+            "text": "API21",
+            "value": "API21",
+            "selected": false
+          },
+          {
+            "text": "API22",
+            "value": "API22",
+            "selected": false
+          },
+          {
+            "text": "API23",
+            "value": "API23",
+            "selected": false
+          },
+          {
+            "text": "API24",
+            "value": "API24",
+            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"AndroidOSVersion\"}",
         "refresh": 1,
-        "type": "query",
-        "allValue": "*"
+        "type": "query"
       }
     ]
   },
@@ -1194,6 +1427,6 @@
   },
   "refresh": "5s",
   "schemaVersion": 12,
-  "version": 8,
+  "version": 27,
   "links": []
 }

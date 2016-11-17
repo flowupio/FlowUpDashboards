@@ -1,5 +1,5 @@
 {
-  "id": 22,
+  "id": 11,
   "title": "Network",
   "originalTitle": "Network",
   "tags": [],
@@ -36,7 +36,7 @@
             "thresholdMarkers": true
           },
           "id": 12,
-          "interval": "4m",
+          "interval": null,
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -49,7 +49,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": true,
+            "full": false,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -83,7 +83,7 @@
             }
           ],
           "thresholds": "",
-          "title": "Bytes Uploaded",
+          "title": "Bytes Uploaded / 10 seconds",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -117,7 +117,7 @@
             "thresholdMarkers": true
           },
           "id": 14,
-          "interval": "4m",
+          "interval": null,
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -130,7 +130,7 @@
           "span": 4,
           "sparkline": {
             "fillColor": "rgba(31, 118, 189, 0.18)",
-            "full": true,
+            "full": false,
             "lineColor": "rgb(31, 120, 193)",
             "show": true
           },
@@ -164,7 +164,7 @@
             }
           ],
           "thresholds": "",
-          "title": "Bytes Downloaded",
+          "title": "Bytes Downloaded / 10 seconds",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -177,7 +177,7 @@
           "valueName": "avg"
         },
         {
-          "content": "# Network Usage\n\nMost of the apps need an internet connection to be able to obtain data from a remote service or authenticate a user. The network usage involves the user directly because if the user is not connected to a WiFi connection every byte downloaded/uploaded is something really valuable to our users. There is no a rule of thumb in terms of network consumption but if you think the usage of the network is excessive, review your API Client implementation and try to compress the data you upload.",
+          "content": "# Network Usage\n\nMost of the apps need an internet connection to be able to obtain data from a remote service or authenticate a user. The network usage involves the user directly because if the user is not connected to a WiFi connection every byte downloaded/uploaded is something really valuable to our users. There is no a rule of thumb in terms of network consumption but if you think the usage of the network is excessive, review your API Client implementation and try to compress the data you upload and download.",
           "editable": true,
           "error": false,
           "id": 1,
@@ -256,7 +256,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded",
+          "title": "Bytes Uploaded / 10 seconds",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -353,7 +353,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded",
+          "title": "Bytes Downloaded / 10 seconds",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -434,13 +434,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Uploaded - Version Name {{VersionName}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "VersionName",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -474,7 +475,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded by App Version",
+          "title": "Bytes Uploaded / 10 seconds by App Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -545,13 +546,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Downloaded - Version Name {{VersionName}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "VersionName",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -585,7 +587,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded by APP Version",
+          "title": "Bytes Downloaded / 10 seconds by APP Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -666,13 +668,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Uploaded - {{AndroidOSVersion}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "AndroidOSVersion",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -706,7 +709,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded by OS Version",
+          "title": "Bytes Uploaded  / 10 seconds by OS Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -777,13 +780,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Downloaded - {{AndroidOSVersion}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "AndroidOSVersion",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -817,7 +821,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded by OS Version",
+          "title": "Bytes Downloaded / 10 seconds by OS Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -898,13 +902,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Uploaded - Device Model {{DeviceModel}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "DeviceModel",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -938,7 +943,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded by Device Model",
+          "title": "Bytes Uploaded / 10 seconds by Device Model",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -1009,13 +1014,14 @@
           "steppedLine": false,
           "targets": [
             {
+              "alias": "Average Bytes Downloaded - Device Model {{DeviceModel}}",
               "bucketAggs": [
                 {
                   "fake": true,
                   "field": "DeviceModel",
                   "id": "3",
                   "settings": {
-                    "order": "asc",
+                    "order": "desc",
                     "orderBy": "_term",
                     "size": "10"
                   },
@@ -1049,7 +1055,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded by Device Model",
+          "title": "Bytes Downloaded / 10 seconds by Device Model",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -1134,28 +1140,168 @@
             "selected": true
           },
           {
-            "text": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
-            "value": "Google Nexus 4 - 5-1-0 - API 22 - 768x1280_1",
+            "text": "Aquaris E4-5",
+            "value": "Aquaris E4-5",
             "selected": false
           },
           {
-            "text": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
-            "value": "Google Nexus 5 - 6-0-0 - API 23 - 1080x1920",
+            "text": "Aquaris X5",
+            "value": "Aquaris X5",
             "selected": false
           },
           {
-            "text": "Nexus 5",
-            "value": "Nexus 5",
+            "text": "D2303",
+            "value": "D2303",
             "selected": false
           },
           {
-            "text": "Nexus 6P",
-            "value": "Nexus 6P",
+            "text": "GT-I8260L",
+            "value": "GT-I8260L",
             "selected": false
           },
           {
-            "text": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
-            "value": "Samsung Galaxy S3 - 4-1-1 - API 16 - 720x1280",
+            "text": "GT-I9060",
+            "value": "GT-I9060",
+            "selected": false
+          },
+          {
+            "text": "GT-I9060M",
+            "value": "GT-I9060M",
+            "selected": false
+          },
+          {
+            "text": "GT-P5110",
+            "value": "GT-P5110",
+            "selected": false
+          },
+          {
+            "text": "GT-P5210",
+            "value": "GT-P5210",
+            "selected": false
+          },
+          {
+            "text": "HP Slate 10 HD",
+            "value": "HP Slate 10 HD",
+            "selected": false
+          },
+          {
+            "text": "HTC One",
+            "value": "HTC One",
+            "selected": false
+          },
+          {
+            "text": "Lenovo B8000-F",
+            "value": "Lenovo B8000-F",
+            "selected": false
+          },
+          {
+            "text": "NBX-T7A3IP",
+            "value": "NBX-T7A3IP",
+            "selected": false
+          },
+          {
+            "text": "Nexus 5X",
+            "value": "Nexus 5X",
+            "selected": false
+          },
+          {
+            "text": "ONIX 10-6 OC",
+            "value": "ONIX 10-6 OC",
+            "selected": false
+          },
+          {
+            "text": "P00C",
+            "value": "P00C",
+            "selected": false
+          },
+          {
+            "text": "P022",
+            "value": "P022",
+            "selected": false
+          },
+          {
+            "text": "Q-3778",
+            "value": "Q-3778",
+            "selected": false
+          },
+          {
+            "text": "RCT6203W46",
+            "value": "RCT6203W46",
+            "selected": false
+          },
+          {
+            "text": "SGP321",
+            "value": "SGP321",
+            "selected": false
+          },
+          {
+            "text": "SM-G350E",
+            "value": "SM-G350E",
+            "selected": false
+          },
+          {
+            "text": "SM-G530FZ",
+            "value": "SM-G530FZ",
+            "selected": false
+          },
+          {
+            "text": "SM-G900M",
+            "value": "SM-G900M",
+            "selected": false
+          },
+          {
+            "text": "SM-G925F",
+            "value": "SM-G925F",
+            "selected": false
+          },
+          {
+            "text": "SM-T113NU",
+            "value": "SM-T113NU",
+            "selected": false
+          },
+          {
+            "text": "SM-T530",
+            "value": "SM-T530",
+            "selected": false
+          },
+          {
+            "text": "SM-T580",
+            "value": "SM-T580",
+            "selected": false
+          },
+          {
+            "text": "SM-T710",
+            "value": "SM-T710",
+            "selected": false
+          },
+          {
+            "text": "VF-795",
+            "value": "VF-795",
+            "selected": false
+          },
+          {
+            "text": "X5S",
+            "value": "X5S",
+            "selected": false
+          },
+          {
+            "text": "X6pro",
+            "value": "X6pro",
+            "selected": false
+          },
+          {
+            "text": "XT1032",
+            "value": "XT1032",
+            "selected": false
+          },
+          {
+            "text": "orbis",
+            "value": "orbis",
+            "selected": false
+          },
+          {
+            "text": "xo4",
+            "value": "xo4",
             "selected": false
           }
         ],
@@ -1182,13 +1328,28 @@
             "selected": true
           },
           {
-            "text": "4.0.3.SNAPSHOT",
-            "value": "4.0.3.SNAPSHOT",
+            "text": "2.1.1",
+            "value": "2.1.1",
             "selected": false
           },
           {
-            "text": "4.1.0.SNAPSHOT",
-            "value": "4.1.0.SNAPSHOT",
+            "text": "2.1.2",
+            "value": "2.1.2",
+            "selected": false
+          },
+          {
+            "text": "2.1.3",
+            "value": "2.1.3",
+            "selected": false
+          },
+          {
+            "text": "2.1.4",
+            "value": "2.1.4",
+            "selected": false
+          },
+          {
+            "text": "2.1.5",
+            "value": "2.1.5",
             "selected": false
           }
         ],
@@ -1220,6 +1381,26 @@
             "selected": false
           },
           {
+            "text": "API17",
+            "value": "API17",
+            "selected": false
+          },
+          {
+            "text": "API18",
+            "value": "API18",
+            "selected": false
+          },
+          {
+            "text": "API19",
+            "value": "API19",
+            "selected": false
+          },
+          {
+            "text": "API21",
+            "value": "API21",
+            "selected": false
+          },
+          {
             "text": "API22",
             "value": "API22",
             "selected": false
@@ -1230,8 +1411,8 @@
             "selected": false
           },
           {
-            "text": "API25",
-            "value": "API25",
+            "text": "API24",
+            "value": "API24",
             "selected": false
           }
         ],
@@ -1244,8 +1425,8 @@
   "annotations": {
     "list": []
   },
-  "refresh": false,
+  "refresh": "5s",
   "schemaVersion": 12,
-  "version": 3,
+  "version": 12,
   "links": []
 }
