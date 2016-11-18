@@ -156,7 +156,7 @@
               "hide": false,
               "metrics": [
                 {
-                  "field": "FramesPerSecond.p10",
+                  "field": "FramesPerSecond.p90",
                   "id": "1",
                   "inlineScript": null,
                   "meta": {},
@@ -354,7 +354,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "FramesPerSecond.p10",
+                  "field": "FramesPerSecond.p90",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -591,7 +591,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "FramesPerSecond.p10",
+                  "field": "FramesPerSecond.p90",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -828,7 +828,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "FramesPerSecond.p10",
+                  "field": "FramesPerSecond.p90",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -1066,7 +1066,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "FramesPerSecond.p10",
+                  "field": "FramesPerSecond.p90",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -1303,7 +1303,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "FramesPerSecond.p10",
+                  "field": "FramesPerSecond.p90",
                   "id": "1",
                   "meta": {},
                   "settings": {},
