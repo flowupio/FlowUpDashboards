@@ -83,7 +83,7 @@
             }
           ],
           "thresholds": "",
-          "title": "Bytes Uploaded / 10 seconds",
+          "title": "Bytes Uploaded / 5 minutes",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -164,7 +164,7 @@
             }
           ],
           "thresholds": "",
-          "title": "Bytes Downloaded / 10 seconds",
+          "title": "Bytes Downloaded / 5 minutes",
           "type": "singlestat",
           "valueFontSize": "80%",
           "valueMaps": [
@@ -202,7 +202,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 4,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "avg": false,
@@ -256,7 +256,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded / 10 seconds",
+          "title": "Bytes Uploaded / 5 minutes",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -299,7 +299,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 5,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "avg": false,
@@ -353,7 +353,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded / 10 seconds",
+          "title": "Bytes Downloaded / 5 minutes",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -405,7 +405,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 10,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -475,7 +475,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded / 10 seconds by App Version",
+          "title": "Bytes Uploaded / 5 minutes by App Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -518,7 +518,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 11,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -587,7 +587,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded / 10 seconds by APP Version",
+          "title": "Bytes Downloaded / 5 minutes by APP Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -639,7 +639,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 6,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -709,7 +709,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded  / 10 seconds by OS Version",
+          "title": "Bytes Uploaded  / 5 minutes by OS Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -752,7 +752,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 7,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -821,7 +821,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded / 10 seconds by OS Version",
+          "title": "Bytes Downloaded / 5 minutes by OS Version",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -873,7 +873,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 8,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -943,7 +943,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Uploaded / 10 seconds by Device Model",
+          "title": "Bytes Uploaded / 5 minutes by Device Model",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -986,7 +986,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 9,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1055,7 +1055,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bytes Downloaded / 10 seconds by Device Model",
+          "title": "Bytes Downloaded / 5 minutes by Device Model",
           "tooltip": {
             "msResolution": false,
             "shared": true,
