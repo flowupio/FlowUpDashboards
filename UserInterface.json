@@ -38,7 +38,7 @@
           "height": "150",
           "hideTimeOverride": false,
           "id": 2,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -120,7 +120,7 @@
             "thresholdMarkers": true
           },
           "id": 1,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "links": [],
           "maxDataPoints": 100,
@@ -209,7 +209,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 13,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -310,7 +310,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 14,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -420,7 +420,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 5,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -534,7 +534,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 10,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -657,7 +657,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 7,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -771,7 +771,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 11,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -894,7 +894,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 6,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1009,7 +1009,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 8,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1132,7 +1132,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 4,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
@@ -1246,7 +1246,7 @@
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
           "id": 9,
-          "interval": "4m",
+          "interval": "5m",
           "isNew": true,
           "legend": {
             "alignAsTable": true,
