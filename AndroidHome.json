@@ -717,7 +717,7 @@
               "hide": false,
               "metrics": [
                 {
-                  "field": "BytesUploaded",
+                  "field": "BytesAllocated",
                   "id": "1",
                   "meta": {},
                   "settings": {},
