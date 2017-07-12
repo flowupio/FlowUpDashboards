@@ -1,5 +1,5 @@
 {
-  "id": 6,
+  "id": null,
   "title": "Activitites Lifecycle",
   "originalTitle": "Activitites Lifecycle",
   "tags": [],
@@ -1648,12 +1648,12 @@
   "templating": {
     "list": [
       {
-        "allFormat": "glob",
+        "allValue": "*",
         "current": {
           "value": [
             "$__all"
           ],
-          "text": "$__all"
+          "text": "All"
         },
         "datasource": null,
         "hide": 0,
@@ -1672,11 +1672,12 @@
         "type": "query"
       },
       {
+        "allValue": "*",
         "current": {
           "value": [
             "$__all"
           ],
-          "text": "$__all"
+          "text": "All"
         },
         "hide": 0,
         "includeAll": true,
@@ -1694,11 +1695,12 @@
         "type": "query"
       },
       {
+        "allValue": "*",
         "current": {
           "value": [
             "$__all"
           ],
-          "text": "$__all"
+          "text": "All"
         },
         "hide": 0,
         "includeAll": true,
@@ -1709,46 +1711,6 @@
             "text": "All",
             "value": "$__all",
             "selected": true
-          },
-          {
-            "text": "API16",
-            "value": "API16",
-            "selected": false
-          },
-          {
-            "text": "API17",
-            "value": "API17",
-            "selected": false
-          },
-          {
-            "text": "API18",
-            "value": "API18",
-            "selected": false
-          },
-          {
-            "text": "API19",
-            "value": "API19",
-            "selected": false
-          },
-          {
-            "text": "API21",
-            "value": "API21",
-            "selected": false
-          },
-          {
-            "text": "API22",
-            "value": "API22",
-            "selected": false
-          },
-          {
-            "text": "API23",
-            "value": "API23",
-            "selected": false
-          },
-          {
-            "text": "API24",
-            "value": "API24",
-            "selected": false
           }
         ],
         "query": "{\"find\": \"terms\", \"field\": \"AndroidOSVersion\"}",
@@ -1761,7 +1723,7 @@
           "value": [
             "$__all"
           ],
-          "text": "$__all"
+          "text": "All"
         },
         "hide": 0,
         "includeAll": true,
